@@ -1,0 +1,40 @@
+/*created by: Madison Jurgens*/
+/*date: 12/01/2025           */
+/*file name: styles.css      */
+
+/*CSS Reset*/
+body, header, nav, main, footer, img, h1, h3, ul{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+  display:block;
+}
+
+body {
+  font-family: Figtree, sans-serif;
+}
+
+/* Nav */
+nav {
+  background-color:#396431;
+}
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+nav li {
+  display: inline-block;
+}
+nav li a {
+  padding-right: 2em;
+  padding-left: 2em;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
