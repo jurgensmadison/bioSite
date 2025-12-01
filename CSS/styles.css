@@ -2,13 +2,14 @@
 /*date: 12/01/2025           */
 /*file name: styles.css      */
 
-/*CSS Reset*/
+/* CSS Reset */
 body, header, nav, main, footer, img, h1, h3, ul{
   margin: 0;
   padding: 0;
   border: 0;
 }
 
+/* Images and body */
 img {
   max-width: 100%;
   display:block;
@@ -37,4 +38,35 @@ nav li a {
   font-weight: bold;
   text-decoration: none;
   color: white;
+}
+
+/* Main */
+main {
+  padding: 2%;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-bottom: 2%;
+}
+
+.container div {
+  padding: 1em;
+}
+.container div:first-child {
+  padding-left: 0;
+}
+.container div:last-child {
+  padding-right: 0;
+}
+.card {
+  background-color: #82c469;
+}
+.container .card:last-child {
+  padding-right:1em;
+}
+
+/* Font styling */
+h1 {
+  font-family: 'Eagle Lake', serif;
 }
