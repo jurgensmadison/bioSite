@@ -1,12 +1,23 @@
 /*created by: Madison Jurgens*/
 /*date: 12/01/2025           */
 /*file name: styles.css      */
+/* Variables */
+/* I used variables for font color: source https://www.w3schools.com/css/css3_variables.asp */
+:root {
+  --darkGreen: #396431;
+  --lightGreen: #82c469;
+}
 
 /* CSS Reset */
 body, header, nav, main, footer, img, h1, h3, ul{
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+/* Hide Mobile */
+.mobile {
+  display:none;
 }
 
 /* Images and body */
@@ -28,7 +39,7 @@ body {
 
 /* Nav */
 nav {
-  background-color:#396431;
+  background-color:var(--darkGreen);
 }
 nav ul {
   list-style-type: none;
@@ -70,13 +81,34 @@ figure {
   margin: 2%;
 }
 .card {
-  background-color: #82c469;
+  background-color: var(--lightGreen);
   padding: 1em;
-  box-shadow: #396431 5px 5px 5px;
+  box-shadow: var(--darkGreen) 5px 5px 5px;
+}
+blockquote.card {
+  padding: 0.25em 1em;
+  margin: 1em 0;
 }
 #community {
   background-color:rgba(57,100,49,0.25);
 }
+table {
+    border: 1px solid var(--darkGreen);
+    border-collapse:collapse;
+    margin: 0 auto;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid var(--darkGreen);
+  }
+  th {
+    background-color: var(--darkGreen);
+    color: #fff;
+    font-size: 1.15em;
+  }
+  td {
+    text-align: center;
+  }
 
 /* Font styling */
 h1 {
@@ -89,8 +121,34 @@ a:hover {
   text-decoration: none;
 }
 
+/* Footer */
+footer {
+  background: var(--darkGreen);
+  color: #fff;
+  padding: 5%;
+}
+
 /*Media query for mobile*/
 @media screen and (max-width: 599px) {
+  /* Show mobile and hide desktop */
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+
+  /* Nav */
+  nav ul {
+    padding: 0;
+  }
+  nav li {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #fff;
+  }
+
   /* Main */
   section {
     padding: 5%;
@@ -105,4 +163,9 @@ a:hover {
   main img {
     padding-bottom: 2%;
   }
+  ul {
+    padding-left: 5%;
+    padding-bottom: 5%;
+  }
+
 }
